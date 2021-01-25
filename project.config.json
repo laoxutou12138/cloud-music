@@ -38,7 +38,7 @@
     "minifyWXSS": true
   },
   "appid": "wxd5e19fc5dd95d594",
-  "projectname": "cloud-music",
+  "projectname": "cloudmusic",
   "libVersion": "2.14.1",
   "condition": {
     "search": {
