@@ -1,0 +1,11 @@
+<!--components/card/card.wxml-->
+<view class="whole-card">
+  <view class="cards">
+    <image class="card-images" src="{{mycard.url}}"></image>
+    <view class="cards-play">
+      <image class="play-img" src="/images/playnum.png"></image>
+      <text class="play-num">{{mycard.number}}</text>
+    </view>
+    <text class="cards-title">{{mycard.title}}</text>
+  </view>
+</view>
