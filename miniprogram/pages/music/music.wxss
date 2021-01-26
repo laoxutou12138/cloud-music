@@ -6,3 +6,13 @@
   width: 100%;
   height: 100%;
 }
+.song-list{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10rpx;
+}
+.card-title{
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+}

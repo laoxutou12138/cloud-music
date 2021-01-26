@@ -1,0 +1,25 @@
+/* components/songlist/songlist.wxss */
+.whole-list{
+  height: 100rpx;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.songid-view{
+  float: left;
+  width: 5%;
+  text-align: center;
+}
+.songdetail-view{
+  float: left;
+  margin-left: 50rpx;
+}
+.singer-text{
+  font-size: 23rpx;
+  color: #817f83;
+  display: flex;
+}
+.name-text{
+  font-size: 32rpx;
+  line-height: 1.8;
+}

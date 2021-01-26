@@ -1,2 +1,4 @@
 <!--pages/find/find.wxml-->
-<text>发现</text>
+<view wx:for="{{songlist}}">
+<song-list songlists="{{item}}"></song-list>
+</view>
