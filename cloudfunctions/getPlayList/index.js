@@ -11,7 +11,7 @@ const playlistCollection=db.collection('playlist')
 //引入网络请求库xaios，并定义一个常量方便调用
 const axios=require('axios')
 //定义接口地址，复制内网穿透后的postman测试通过的接口地址
-const URL='https://lxtwx.cn1.utools.club/top/playlist/highquality?before=1503639064232&limit=21'
+const URL='https://lxtwx.cn1.utools.club/top/playlist/highquality?before=1503639064232&limit=99'
 // 云函数入口函数
 exports.main = async (event, context) => {
   //使用axios发送异步get请求，并把结果赋值给data变量
