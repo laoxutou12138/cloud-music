@@ -1,8 +1,0 @@
-<!--components/card/card.wxml-->
-<view class="cards">
-  <image class="card-images" src="{{mycard.url}}"></image>
-  <view class="play-playcount">
-    {{_count}}
-  </view>
-  <text class="cards-title">{{mycard.title}}</text>
-</view>

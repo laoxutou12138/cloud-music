@@ -1,4 +1,4 @@
-/* components/card/card.wxss */
+/* components/playlist/playlist.wxss */
 .cards{
   width: 220rpx;
   position: relative;

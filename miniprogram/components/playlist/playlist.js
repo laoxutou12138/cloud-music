@@ -1,15 +1,15 @@
-// components/card/card.js
+// components/playlist/playlist.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    mycard:{
+    playlist:{
       type:Object,
     }
   },
   observers:{
-    ['mycard.number'](count){
+    ['playlist.playCount'](count){
       this.setData({
         _count:this._tranNumber(count,2)
       })

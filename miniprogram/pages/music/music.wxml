@@ -9,8 +9,8 @@
   场景歌单
 </text>
 <view class="song-list">
-  <block wx:for="{{listDetail}}" wx:key="id">
-    <my-card mycard="{{item}}"></my-card>
+  <block wx:for="{{playlist}}" wx:key="id">
+    <my-playlist playlist="{{item}}"></my-playlist>
   </block>
 </view>
 
