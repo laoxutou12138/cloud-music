@@ -1,5 +1,5 @@
 <!--components/playlist/playlist.wxml-->
-<view class="cards">
+<view class="cards" bind:tap="goToMusiclist">
   <image class="card-images" src="{{playlist.coverImgUrl}}"></image>
   <view class="play-playcount">
     {{_count}}

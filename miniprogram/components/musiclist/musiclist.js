@@ -4,9 +4,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    songlists:{
-      type:Object,
-    }
+    musiclist:Array
   },
 
   /**

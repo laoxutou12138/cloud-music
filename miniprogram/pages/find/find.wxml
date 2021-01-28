@@ -1,4 +1,3 @@
 <!--pages/find/find.wxml-->
-<view wx:for="{{songlist}}">
-<song-list songlists="{{item}}"></song-list>
+<view>
 </view>
