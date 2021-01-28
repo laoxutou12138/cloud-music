@@ -20,7 +20,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    _count:0
+    _count:0,
   },
 
   /**

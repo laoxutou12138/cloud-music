@@ -1,5 +1,4 @@
 {
   "usingComponents": {
-    "song-list":"/components/songlist/songlist"
   }
 }

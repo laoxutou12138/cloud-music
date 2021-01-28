@@ -1,21 +1,18 @@
 <!--components/songlist/songlist.wxml-->
-<view wx:for="{{musiclist}}" wx:key='id' class="whole-list">
-  
+<block wx:for="{{musiclist}}" wx:key='id'>
+<view bind:tap="onSelect" class="whole-list {{item.id===playingID ? 'playing':''}}" 
+ data-musicid="{{item.id}}" data-index="{{index}}">
 <view class="songid-view">
   <view>
-    {{index+1}}
+    {{index+1}} 
   </view>
 </view>
-
 <view class="songdetail-view">
-
 <text class="name-text">{{item.name}}</text>
-
 <view class="singer-text">
   <text>{{item.ar[0].name}}-</text>
   <text>{{item.al.name}}</text>
 </view>
-
 </view>
-
 </view>
+</block>
