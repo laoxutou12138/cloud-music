@@ -6,6 +6,10 @@
     <image class="player-img zhuan {{isPlaying?'':'ting'}}" src="{{picUrl}}"></image>
   </view>
 
+<view>
+<xtx-progress-bar class="progress-bar" bind:musicEnd="onNext"></xtx-progress-bar>
+</view>
+
   <view class="control">
     <text class="iconfont icon-shangyishou-yuanshijituantubiao" bind:tap="onPrev"></text>
     <text class="iconfont {{isPlaying?'icon-ziyuan99':'icon-bofang'}}" bind:tap="togglePlaying"></text>
