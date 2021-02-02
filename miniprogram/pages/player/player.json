@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "xtx-progress-bar":"/components/progress-bar/progress-bar"
-  }
+    "xtx-progress-bar":"/components/progress-bar/progress-bar",
+    "xtx-lyric":"/components/lyric/lyric"
+  },
+  "disableScroll":true
 }

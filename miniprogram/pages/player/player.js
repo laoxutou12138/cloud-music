@@ -10,7 +10,10 @@ Page({
   data: {
     picUrl:'',
     isPlaying:false,
-
+    name:'',
+    singer:'',
+    isLyricShow:false,
+    lyric:'传给歌词组件的歌词'
   },
 
   /**
@@ -68,6 +71,22 @@ Page({
       backgroundAudioManager.singer=music.ar[0].name
       this.setData({
         isPlaying:true
+      })
+      wx.cloud.callFunction({
+        name:'music',
+        data:{
+          musicId,
+          $url:'lyric'
+        }
+      }).then((res)=>{
+        let lyric="暂无歌词"
+        const lrc=res.result.lrc
+        if(lrc){
+          lyric=lrc.lyric
+        }
+        this.setData({
+          lyric
+        })
       })
     })
   },
@@ -134,5 +153,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onLyricShow(){
+    this.setData({
+      isLyricShow:!this.data.isLyricShow
+    })
   }
 })
